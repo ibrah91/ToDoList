@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import TodoForm from './TodoForm';
+import Footer from './Footer';
 import Todo from './Todo';
 
 function TodoList() {
@@ -39,7 +40,7 @@ function TodoList() {
         });
         setTodos(updatedTodos);
     };
-
+//
     return (
         <>
             <h1>Quel est le plan pour aujourd'hui ?</h1>
@@ -51,6 +52,7 @@ function TodoList() {
                 updateTodo={updateTodo}
             />
         </>
+        
     );
 }
 
